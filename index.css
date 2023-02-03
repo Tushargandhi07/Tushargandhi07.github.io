@@ -2,6 +2,9 @@
     margin: 0px;
     /* background-color: black; */
 }
+body{
+    background-color: black;
+}
 /* navbar */
 #nav-menu {
     width: 100%;
@@ -13,11 +16,12 @@
     padding: 30px 0;
     font-family: "Ubuntu", sans-serif;
     transition: all 0.3s ease;
+    border-bottom: 2px dotted grey;
 }
 
 #nav-menu.sticky {
     padding: 15px 0;
-    background: #2253c8;
+    background: #068585;
 }
 
 #nav-menu .max-width {
@@ -37,7 +41,7 @@
 }
 
 #nav-menu .logo a span {
-    color:rgb(0, 96, 0);
+    color:#068585;
     transition: all 0.3s ease;
 }
 
@@ -66,7 +70,7 @@
 }
 
 #nav-menu .menu li a:hover {
-    color: #2253c8;
+    color: #068585;
 }
 
 #nav-menu.sticky .menu li a:hover {
@@ -74,7 +78,7 @@
 }
 
 #home ,#about, #projects,#skills,#contact{
-    height: 400px;
+    height: 600px;
     border: 1px solid red;
 }
 section{
@@ -93,15 +97,15 @@ section{
     font-size: 50px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: -1px 1px 0 rgb(0, 96, 0),
-                          1px 1px 0 rgb(0, 96, 0),
-                         1px -1px 0 rgb(0, 96, 0),
-                        -1px -1px 0 rgb(0, 96, 0);
+    text-shadow: -1px 3px 0 #068585,
+                          1px 1px 0 #068585,
+                         1px -1px 0 #068585,
+                        -1px -1px 0 #068585;
 }
 
 #home p:nth-child(1):hover{
     transition: 0.3s;
-    color:rgb(0, 96, 0);
+    color:#068585
    
 }
 
@@ -110,5 +114,102 @@ section{
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    color:rgb(0, 96, 0)
+    color:#068585
+}
+
+/* about section */
+.about{
+    background-color:black;
+}
+
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: white;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    border: 1px solid black;
+    width:50%;
+}
+
+.right{
+    border: 1px solid black;
+    width:25%
+}
+
+.home-img{
+    width:100%;
+    border-radius: 15px;
+    border: 8px solid #068585;
+}
+
+.left>p{
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+}
+
+#highlight{
+    color:#068585;
+    font-size:30px
+}
+
+#container{
+    width: 130px;
+    background-color: #057272;
+    color:white;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#resume-link-1,
+#resume-link{
+    background-color:#057272;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+/* skills section */
+
+.skills_box {
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(3,1fr);
+    gap: 80px;
+    margin: auto;
+  }
+
+.skills-card{
+    background-color: white;
+    text-align: center;
+    height: 200px;
+    padding: 40px 20px;
+    border-radius: 15px;
+} 
+
+.skills-card:hover{
+    border-radius: 15px;
+    border: 8px solid #068585;
+}
+
+.skills-card img{
+    width:150px;
+    background-color: white;
+}
+
+.skills-card h1{
+    font-size: 30px;
 }
