@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0px;
     /* background-color: black; */
@@ -57,6 +59,7 @@ body{
 #nav-menu .menu li {
     list-style: none;
     display: inline-block;
+    transition: 0.3s
 }
 
 #nav-menu .menu li a {
@@ -67,6 +70,7 @@ body{
     margin-left: 25px;
     transition: color 0.3s ease;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 #nav-menu .menu li a:hover {
@@ -77,10 +81,12 @@ body{
     color: #fff;
 }
 
-#home ,#about, #projects,#skills,#contact{
-    height: 600px;
-    border: 1px solid red;
-}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
 section{
     padding: 100px;
 }
@@ -162,7 +168,7 @@ section{
     font-size:30px
 }
 
-#container{
+#container,.resume_btn{
     width: 130px;
     background-color: #057272;
     color:white;
@@ -173,7 +179,7 @@ section{
     border-radius: 5px;
 }
 
-#resume-link-1,
+#resume-link-2,
 #resume-link{
     background-color:#057272;
     color: white;
@@ -212,4 +218,69 @@ section{
 
 .skills-card h1{
     font-size: 30px;
+}
+
+/* projects section */
+
+.project-card{
+    margin-top: 150px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.project-card >img{
+    width:50%;
+    height:250px;
+    border-radius: 15px;
+}
+
+.about_project{
+    width: 40%;
+}
+
+.about_project>h1{
+    color:#068585;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.about_project>p:nth-child(2){
+    color:  white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.about_project>p:nth-child(3){
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-deployed-link,
+.project-github-link{
+    background-color: #057272;
+    color:white;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 150px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+/* contact section */
+
+#contact{
+    background-color: white;
+}
+
+#box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }

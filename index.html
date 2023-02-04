@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -19,14 +20,15 @@
             <li><a href="#skills" class="nav-link skills">Skills</a></li>
             <li><a href="#projects" class="nav-link projects">Projects</a></li>
             <li><a href="#contact" class="nav-link contact">Contact</a></li>
-            <li><a href="./images/Tushar_Gandhi_Resume.pdf"download class="nav-link resume">Resume</a></li>
+            <li id="resume-button-1"><a href="./images/Tushar_Gandhi_Resume.pdf" download class="nav-link resume"
+                    id="resume-link-1">Resume</a></li>
         </ul>
     </div>
 
     <!-- home section -->
     <section id="home">
         <p id="user-detail-name"> Hey I'm Tushar Gandhi </p>
-        <p > Full Stack Web-Developer</p>
+        <p> Full Stack Web-Developer</p>
     </section>
 
 
@@ -38,7 +40,8 @@
 
         <div class="about-content">
             <div class="left">
-                <p id="user-detail-intro">I'm a <span id="highlight">Full Stack Web-developer </span> with a great passion for programming. I
+                <p id="user-detail-intro">I'm a <span id="highlight">Full Stack Web-developer </span> with a great
+                    passion for programming. I
                     am passionate about delivering solutions that add to people's lives and at the same time challenge
                     me. <br> <br>
                     I develop websites and applications using <span id="highlight"> HTML, CSS, JavaScript , Node-JS,
@@ -51,8 +54,8 @@
                         href="https://drive.google.com/file/d/1iTu0C9XvWkvLS8lV04s1vNlNsVltXinx/view?usp=share_link"
                         download>Preview CV</a>
                 </div>
-                <div id="container">
-                    <a id="resume-link-1" download="" href="./images/Tushar_Gandhi_Resume.pdf" download>Download CV</a>
+                <div id="resume-button-2" class="resume_btn">
+                    <a id="resume-link-2" download="" href="./images/Tushar_Gandhi_Resume.pdf" download>Download CV</a>
                 </div>
 
             </div>
@@ -63,7 +66,7 @@
     </section>
 
 
-<!-- skills section -->
+    <!-- skills section -->
 
     <section id="skills">
 
@@ -79,7 +82,8 @@
                     <h1 class="skills-card-name">CSS3</h1>
                 </div>
                 <div class="skills-card">
-                    <img src="https://chiranjeev-thapliyal.vercel.app/svg/javascript.svg" class="skills-card-img" alt="">
+                    <img src="https://chiranjeev-thapliyal.vercel.app/svg/javascript.svg" class="skills-card-img"
+                        alt="">
                     <h1 class="skills-card-name">JavaScript</h1>
                 </div>
                 <div class="skills-card">
@@ -97,31 +101,112 @@
 
             </div>
         </div>
-
-        <!-- <div id="title_box">
-            <h2 class="title">Skills</h2>
-        </div>
-
-        <div id="skills_box">
-            <div id="skills-card">
-                <div class="skills-card-img_box">
-                    <img src="https://chiranjeev-thapliyal.vercel.app/svg/html-5.svg" alt="HTML" id="skills-card-img">
-                </div>
-            </div>
-        </div> -->
-        <!-- <img src="https://chiranjeev-thapliyal.vercel.app/svg/html-5.svg" alt=""> -->
     </section>
-
-
 
 
     <section id="projects">
-        <h1>projects section</h1>
-        
+        <h2 class="title">Projects</h2>
+        <div id="project_box">
+            <div class="project-card">
+
+                <img src="./images/advanceAuto image.png" class="skills-card-img" alt="">
+                <div class="about_project">
+                    <h1 class="project-title">Advance Auto Parts - Clone</h1>
+                    <p class="project-description">E-commerce website which sells various types of Auto Parts.</p>
+                    <p class="project-tech-stack">Tech-Stacks : <span>HTML, CSS, JavaScript, Node-JS, Express,
+                            MongoDB</span></p>
+                    <button class="project-deployed-link"
+                        onclick="window.open('https://cozy-lolly-e23abd.netlify.app/','_blank')">See
+                        Live</button>
+                    <button class="project-github-link"
+                        onclick="window.open('https://github.com/Tushargandhi07/affable-fang-3484','_blank')">Source
+                        Code</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+
+                <div class="about_project">
+                    <h1 class="project-title">Hubspot - Clone</h1>
+                    <p class="project-description">Hubspot is a marketing, sales, and services platform that help
+                        companies to attract new customer.</p>
+                    <p class="project-tech-stack">Tech-Stacks : <span>HTML, CSS, JavaScript</span></p>
+                    <button class="project-deployed-link"
+                        onclick="window.open('https://cosmic-sprinkles-6ae42e.netlify.app/','_blank')">See
+                        Live</button>
+                    <button class="project-github-link"
+                        onclick="window.open('https://github.com/MalikRehan-M/arrogant-change-8923','_blank')">Source
+                        Code</button>
+                </div>
+                <img src="./images/hubspot image.png" class="skills-card-img" alt="">
+            </div>
+
+            <div class="project-card">
+
+                <img src="./images/wrike image.png" class="skills-card-img" alt="">
+                <div class="about_project">
+                    <h1 class="project-title">Wrike - Clone</h1>
+                    <p class="project-description">A CRM platform which provides various types of marketing services.
+                    </p>
+                    <p class="project-tech-stack">Tech-Stacks : <span>HTML, CSS, JavaScript</span></p>
+                    <button class="project-deployed-link"
+                        onclick="window.open('https://famous-pudding-ae408b.netlify.app/home.html','_blank')">See
+                        Live</button>
+                    <button class="project-github-link"
+                        onclick="window.open('https://github.com/Tushargandhi07/evil-burst-477.git','_blank')">Source
+                        Code</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+
+                <div class="about_project">
+                    <h1 class="project-title">Hubspot - Clone</h1>
+                    <p class="project-description">Hubspot is a marketing, sales, and services platform that help
+                        companies to attract new customer.</p>
+                    <p class="project-tech-stack">Tech-Stacks : <span>HTML, CSS, JavaScript</span></p>
+                    <button class="project-deployed-link"
+                        onclick="window.open('https://cosmic-sprinkles-6ae42e.netlify.app/','_blank')">See
+                        Live</button>
+                    <button class="project-github-link"
+                        onclick="window.open('https://github.com/MalikRehan-M/arrogant-change-8923','_blank')">Source
+                        Code</button>
+                </div>
+                <img src="./images/hubspot image.png" class="skills-card-img" alt="">
+            </div>
+
+        </div>
+
     </section>
+
+
     <section id="contact">
-        <h1>contact section</h1>
+        <h2 class="title">Contact</h2>
+        <div id="box"><i class="fa fa-github" style="font-size:36px"></i>
+            <p>:<a target="_blank" href="https://github.com/Tushargandhi07"
+                    id="contact-github">Tushargandhi07</a>
+            </p>
+        </div>
+
+        <div id="box">
+            <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+            <p><a target="_blank" href="https://www.linkedin.com/in/tushar-gandhi-1099b3224/"
+                id="contact-linkedin">Tushar Gandhi</a></p>
+        </div>
+        
+        <div id="box">
+            <i class="fa fa-envelope" style="font-size:48px;color:red"></i>
+            <p id="contact-phone">Contact no: +91 7015200992</p>
+        </div>
+        
+        <div id="box">
+            <i class="fa fa-phone" style="font-size:48px;color:red"></i>
+            <p id="contact-phone">Email: tushargan7@gmail.com</p>
+        </div >
+       
     </section>
+
+
 
 
 </body>
