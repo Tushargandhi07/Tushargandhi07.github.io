@@ -17,3 +17,7 @@ function closem(){
     menu.style.top='-100%';
     console.log("yes")
 }
+
+function resume(){
+    window.open("https://drive.google.com/file/d/1iTu0C9XvWkvLS8lV04s1vNlNsVltXinx/view");
+}
