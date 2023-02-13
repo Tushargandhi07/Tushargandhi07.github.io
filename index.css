@@ -276,6 +276,9 @@ section {
 
 /* projects section */
 
+#project{
+    height:400px;
+}
 
 .project-card {
     margin-top: 150px;
