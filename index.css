@@ -12,7 +12,7 @@ body {
 /* navbar */
 #nav-menu {
     width: 100%;
-    background-color:black;
+    background-color: black;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -89,9 +89,9 @@ body {
     font-size: 23px;
     cursor: pointer;
     display: none;
-  }
-  
-  .scroll-up-btn {
+}
+
+.scroll-up-btn {
     position: fixed;
     height: 45px;
     width: 42px;
@@ -109,30 +109,31 @@ body {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
-  }
-  
-  .scroll-up-btn.show {
+}
+
+.scroll-up-btn.show {
     bottom: 30px;
     opacity: 1;
     pointer-events: auto;
-  }
-  
-  .scroll-up-btn:hover {
+}
+
+.scroll-up-btn:hover {
     filter: brightness(90%);
-  }
-  .openMenu{
+}
+
+.openMenu {
     font-size: 2rem;
     margin: 2px;
     cursor: pointer;
     color: white;
-    display:none
-  }
+    display: none
+}
 
-  .closeMenu{
+.closeMenu {
     font-size: 2rem;
-    display:none;
-    cursor:pointer;
-  }
+    display: none;
+    cursor: pointer;
+}
 
 
 
@@ -420,7 +421,7 @@ section {
     margin-bottom: 50px;
 }
 
-@media screen and (min-width:801px) and (max-width:900px) {
+/* @media screen and (min-width:801px) and (max-width:900px) {
 
     .skills_box {
         display: grid;
@@ -433,7 +434,7 @@ section {
     .title {
         font-family: 60px;
     }
-}
+} */
 
 /* @media screen and (min-width:801px) and (max-width:1100px) {
     #contact {
@@ -452,56 +453,56 @@ section {
     #github {
         text-align: center;
     }
-}
+} */
 
-@media screen and (min-width:301px) and (max-width:800px) {
+/* @media screen and (min-width:301px) and (max-width:800px) {
 
-    .menu{
-    height:60vh;
-    position:fixed;
-    top:0;
-    right:10px;
-    left:0;
-    z-index:10;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    background:white;
-    transition:top 1s ease;
-    display: none;
-   }
+    .menu {
+        height: 60vh;
+        position: fixed;
+        top: 0;
+        right: 10px;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        background: white;
+        transition: top 1s ease;
+        display: none;
+    } */
 
-   .closeMenu{
-    display:block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-   }
+    /* .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
 
-   .openMenu{
-    display:block;
-    color: white;
-    padding: 0px;
-   }
+    .openMenu {
+        display: block;
+        color: white;
+        padding: 0px;
+    }
 
-   #nav-menu .menu li a {
-    color:black;
-    background-color: #fff;
-    font-size: 2rem;
-    /* font-weight: 600; */
-    margin-bottom: 20px;
-    /* border-bottom: 1px dotted black; */
+    #nav-menu .menu li a {
+        color: black;
+        background-color: #fff;
+        font-size: 2rem;
+       
+        margin-bottom: 20px;
 
-}
+    }
+
     .skills_box {
         display: grid;
         width: 70%;
         grid-template-columns: repeat(1, 1fr);
         gap: 80px;
         margin: auto;
-    }
+    } */
 
-    .about-content {
+    /* .about-content {
         display: flex;
         justify-content: space-between;
         flex-direction: column-reverse;
@@ -527,12 +528,11 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
+    } */
 
-    .project-card>img {
+    /* .project-card>img {
         width: 80%;
         margin: auto;
-        /* height:250px; */
         border-radius: 15px;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -574,8 +574,8 @@ section {
         font-size: 20px;
     }
 
-  
-     
-    
-     
+
+
+
+
 } */
