@@ -150,7 +150,6 @@ section {
 
 #home {
     text-align: center;
-    height:600px;
 }
 
 #home p:nth-child(1) {
@@ -276,6 +275,10 @@ section {
 }
 
 /* projects section */
+
+#projects{
+    height:600px;
+}
 
 .project-card {
     margin-top: 150px;
