@@ -396,7 +396,7 @@ section {
     color: #068585;
 }
 
-#contact #resume-button-2 {
+#contact #resume-button-2,#resume-button-3 {
     margin: auto;
     margin-top: 20px;
 }
