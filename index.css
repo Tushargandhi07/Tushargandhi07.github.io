@@ -143,6 +143,7 @@ html {
 
 section {
     padding: 100px;
+    border-bottom: .5px dotted grey;
 }
 
 
@@ -150,10 +151,12 @@ section {
 
 #home {
     text-align: center;
+    background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/SNc_bPaMeiw63zp8r/black-seamless-animated-background-loop_sxckzlcwe_thumbnail-1080_01.png");
+    height:80vh
 }
 
 #home p:nth-child(1) {
-    margin-top: 15%;
+    margin-top: 20%;
     font-size: 50px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -169,11 +172,11 @@ section {
 }
 
 #home p:nth-child(2) {
-    margin-top: 1%;
+    margin-top: 5%;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    color: #068585
+    color: #068585;
 }
 
 /* about section */
@@ -208,6 +211,11 @@ section {
     width: 100%;
     border-radius: 15px;
     border: 8px solid #068585;
+}
+
+.home-img:hover{
+   transform: scale(1.1);
+   transition: 0.8s;
 }
 
 .left>p {
@@ -268,6 +276,7 @@ section {
 .skills-card img {
     width: 150px;
     background-color: white;
+    height: 70%;
 }
 
 .skills-card h1 {
@@ -288,8 +297,11 @@ section {
 
 .project-card>img {
     width: 50%;
-    /* height:250px; */
     border-radius: 15px;
+}
+.project-card>img:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
 }
 
 .about_project {
@@ -335,13 +347,25 @@ section {
 #github-top-langs>p>img {
     max-width: 100%;
 }
+#github-top-langs>p>img:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
 
 #github-stats-card>p>img {
     max-width: 100%;
 }
+#github-stats-card>p>img:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+}
 
 #github-streak-stats>p>img {
     max-width: 100%;
+}
+#github-streak-stats>p>img:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
 }
 
 .calendar react-activity-calendar {

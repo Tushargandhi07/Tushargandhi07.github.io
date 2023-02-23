@@ -21,3 +21,13 @@ function closem(){
 function resume(){
     window.open("https://drive.google.com/file/d/1iTu0C9XvWkvLS8lV04s1vNlNsVltXinx/view");
 }
+
+
+// auto_type 
+
+var auto= new Typed("#auto_type", {
+    strings: ["Full Stack Web-Developer", "Coder"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true
+  });
