@@ -15,7 +15,6 @@ function showm(){
 
 function closem(){
     menu.style.top='-100%';
-    console.log("yes")
 }
 
 function resume(){

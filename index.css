@@ -21,6 +21,7 @@ body {
     font-family: "Ubuntu", sans-serif;
     transition: all 0.3s ease;
     border-bottom: 2px dotted grey;
+    object-fit: cover;
 }
 
 #nav-menu.sticky {
@@ -103,7 +104,7 @@ body {
     color: #fff;
     z-index: 9999;
     font-size: 30px;
-    border-radius: 6px;
+    border-radius: 2px;
     border-bottom-width: 2px;
     cursor: pointer;
     opacity: 0;
@@ -124,6 +125,7 @@ body {
 .openMenu {
     font-size: 2rem;
     margin: 2px;
+    margin-right: 20px;
     cursor: pointer;
     color: white;
     display: none
@@ -150,13 +152,15 @@ section {
 /* home section */
 
 #home {
-    text-align: center;
     background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/SNc_bPaMeiw63zp8r/black-seamless-animated-background-loop_sxckzlcwe_thumbnail-1080_01.png");
-    height:80vh
+    height:80vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #home p:nth-child(1) {
-    margin-top: 20%;
     font-size: 50px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -209,7 +213,7 @@ section {
 
 .home-img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 2px;
     border: 8px solid #068585;
 }
 
@@ -238,7 +242,7 @@ section {
     padding: 10px;
     text-align: center;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 #resume-link-2,
@@ -254,7 +258,7 @@ section {
 
 .skills_box {
     display: grid;
-    width: 70%;
+    width: 80%;
     grid-template-columns: repeat(3, 1fr);
     gap: 80px;
     margin: auto;
@@ -265,11 +269,11 @@ section {
     text-align: center;
     height: 200px;
     padding: 40px 20px;
-    border-radius: 15px;
+    border-radius: 2px;
 }
 
 .skills-card:hover {
-    border-radius: 15px;
+    border-radius: 2px;
     border: 8px solid #068585;
 }
 
@@ -297,7 +301,7 @@ section {
 
 .project-card>img {
     width: 50%;
-    border-radius: 15px;
+    border-radius: 2px;
 }
 .project-card>img:hover {
     transform: scale(1.1);
@@ -335,7 +339,7 @@ section {
     padding: 10px;
     text-align: center;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 2px;
     font-size: 15px;
     width: 150px;
     margin-right: 20px;
@@ -350,6 +354,10 @@ section {
 #github-top-langs>p>img:hover{
     transform: scale(1.1);
     transition: 0.8s;
+}
+#github-stats-card{
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 #github-stats-card>p>img {
@@ -393,7 +401,7 @@ section {
     margin: auto;
     padding: 30px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: 10px;
+    border-radius: 2px;
 }
 
 #box {
@@ -420,16 +428,13 @@ section {
     color: #068585;
 }
 
-#contact #resume-button-2,#resume-button-3 {
+#contact #resume-button-2{
     margin: auto;
     margin-top: 20px;
 }
 
 
 /* stats section */
-#github {
-    /* background-color: white; */
-}
 
 .calendar {
     background-color: white;
@@ -448,41 +453,12 @@ section {
     margin-bottom: 50px;
 }
 
-@media screen and (min-width:801px) and (max-width:900px) {
 
-    .skills_box {
-        display: grid;
-        width: 70%;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 80px;
-        margin: auto;
+@media screen and (min-width:300px) and (max-width:500px){
+    section{
+        padding:50px
     }
-
-    .title {
-        font-family: 60px;
-    }
-}
-
-@media screen and (min-width:801px) and (max-width:1100px) {
-    #contact {
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    #contact_box {
-        background-color: white;
-        min-width: 100%;
-        margin: 0px;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    }
-
-    #github {
-        text-align: center;
-    }
-}
-
-@media screen and (min-width:301px) and (max-width:800px) {
+    
 
     .menu {
         height: 60vh;
@@ -516,9 +492,340 @@ section {
         color: black;
         background-color: #fff;
         font-size: 2rem;
-        /* font-weight: 600; */
         margin-bottom: 20px;
-        /* border-bottom: 1px dotted black; */
+
+    }
+    .max-width{
+        width: 100%;
+    }
+
+    .skills_box {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+    .skills_box>div:nth-child(4)>img{
+        height: 75px;
+    }
+
+    .skills-card{
+        height:150px;
+        padding: 5px 5px;
+    }
+    .skills-card>h1{
+        font-size: 25px;
+    }
+    .skills-card>img{
+        height: 100px;
+    }
+
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        width: 100%;
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    .right {
+        margin: auto;
+        width: 55%
+    }
+    .project-card {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .project-card>img {
+        width: 100%;
+        margin: auto;
+        border-radius: 2px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .about_project>h1{
+        font-size: 25px;
+    }
+
+    .about_project {
+        width: 100%;
+    }
+
+    #project_box>.project-card:nth-child(2),
+    #project_box>.project-card:nth-child(4) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #github {
+        text-align: center;
+    }
+
+    #contact {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #contact_box {
+        background-color: white;
+        font-size: smaller;
+        width: 60%;
+        margin: auto;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    #highlight {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:600px){
+    .menu {
+        height: 60vh;
+        position: fixed;
+        top: 0;
+        right: 10px;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        background: white;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .openMenu {
+        display: block;
+        color: white;
+        padding: 0px;
+    }
+
+    #nav-menu .menu li a {
+        color: black;
+        background-color: #fff;
+        font-size: 2rem;
+        margin-bottom: 20px;
+
+    }
+
+    .skills_box {
+        display: grid;
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        margin: auto;
+    }
+
+    .skills-card{
+        height:120px;
+    }
+
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        width: 100%;
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    .right {
+        margin: auto;
+        width: 35%
+    }
+    
+    .project-card {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .project-card>img {
+        width: 100%;
+        margin: auto;
+        border-radius: 2px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .about_project {
+        width: 100%;
+    }
+
+    #project_box>.project-card:nth-child(2),
+    #project_box>.project-card:nth-child(4) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #github {
+        text-align: center;
+    }
+    .react-activity-calendar{
+        width: 100%;
+    }
+
+    #contact {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #contact_box {
+        background-color: white;
+        font-size: smaller;
+        width: 60%;
+        margin: auto;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+    .about_project>h1{
+        font-size: 25px;
+    }
+
+    #highlight {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (min-width:801px) and (max-width:900px) {
+
+    .menu {
+        height: 60vh;
+        position: fixed;
+        top: 0;
+        right: 10px;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        background: white;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .openMenu {
+        display: block;
+        color: white;
+        padding: 0px;
+    }
+
+    #nav-menu .menu li a {
+        color: black;
+        background-color: #fff;
+        font-size: 2rem;
+        margin-bottom: 20px;
+
+    }
+    .skills_box {
+        display: grid;
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+        margin: auto;
+    }
+
+    .title {
+        font-family: 60px;
+    }
+
+}
+
+@media screen and (min-width:801px) and (max-width:1100px) {
+    #contact {
+        width: 60%;
+        margin: auto;
+    }
+
+    #contact_box {
+        background-color: white;
+        width: 60%;
+        margin: auto;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    #github {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:800px) {
+
+    .menu {
+        height: 60vh;
+        position: fixed;
+        top: 0;
+        right: 10px;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        background: white;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .openMenu {
+        display: block;
+        color: white;
+        padding: 0px;
+    }
+
+    #nav-menu .menu li a {
+        color: black;
+        background-color: #fff;
+        font-size: 2rem;
+        margin-bottom: 20px;
 
     }
 
@@ -550,7 +857,9 @@ section {
         margin: auto;
         width: 35%
     }
-
+    #project_box>div:nth-child(1){
+        margin-top: 0px;
+    }
     .project-card {
         margin-top: 150px;
         display: flex;
@@ -561,8 +870,7 @@ section {
     .project-card>img {
         width: 80%;
         margin: auto;
-        /* height:250px; */
-        border-radius: 15px;
+        border-radius: 2px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
@@ -590,8 +898,9 @@ section {
 
     #contact_box {
         background-color: white;
-        min-width: 100%;
-        margin: 0px;
+        font-size: smaller;
+        width: 60%;
+        margin: auto;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
 
@@ -603,8 +912,47 @@ section {
         font-size: 20px;
     }
 
-
-
-
-
 }
+@media screen and (min-width:900px) and (max-width:1000px){
+    .skills_box {
+        display: grid;
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:1100px) and (max-width:1500px){
+    #contact_box {
+        width: 70%;
+        margin: auto;
+        
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1200px){
+    .skills-card {
+        background-color: white;
+        text-align: center;
+        height: 100px;
+        padding: 10% 1%;
+        border-radius: 2px;
+    }
+    
+    .skills-card:hover {
+        border-radius: 2px;
+        border: 8px solid #068585;
+    }
+    
+    .skills-card img {
+        width: 150px;
+        background-color: white;
+        height: 70%;
+    }
+    
+    .skills-card h1 {
+        font-size: 30px;
+    }
+}
+
