@@ -367,6 +367,9 @@ section {
     transform: scale(1.1);
     transition: 0.8s;
 }
+#stats_box{
+    text-align: center;
+}
 
 #github-streak-stats>p>img {
     max-width: 100%;
