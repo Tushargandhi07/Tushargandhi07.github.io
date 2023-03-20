@@ -2,7 +2,7 @@
 
 * {
     margin: 0px;
-    /* background-color: black; */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -273,8 +273,9 @@ section {
 }
 
 .skills-card:hover {
-    border-radius: 2px;
-    border: 8px solid #068585;
+    transform: scale(1.1);
+    transition: 0.8s;
+
 }
 
 .skills-card img {
@@ -938,11 +939,6 @@ section {
         height: 100px;
         padding: 10% 1%;
         border-radius: 2px;
-    }
-    
-    .skills-card:hover {
-        border-radius: 2px;
-        border: 8px solid #068585;
     }
     
     .skills-card img {
