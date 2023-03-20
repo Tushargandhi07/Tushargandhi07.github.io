@@ -308,6 +308,10 @@ section {
     transform: scale(1.1);
     transition: 0.8s;
 }
+button:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
 
 .about_project {
     width: 40%;
