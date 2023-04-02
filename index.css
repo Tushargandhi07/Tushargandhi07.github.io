@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     scroll-behavior: smooth;
+    font-family: "Roborto", sans-serif;
 }
 
 body {
@@ -259,7 +260,7 @@ section {
 .skills_box {
     display: grid;
     width: 80%;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 80px;
     margin: auto;
 }
@@ -267,9 +268,10 @@ section {
 .skills-card {
     background-color: white;
     text-align: center;
-    height: 200px;
+    height: 150px;
     padding: 40px 20px;
     border-radius: 2px;
+    position:relative
 }
 
 .skills-card:hover {
@@ -285,7 +287,14 @@ section {
 }
 
 .skills-card h1 {
-    font-size: 30px;
+    font-size: 25px;
+    color:rgb(87, 86, 86);
+    position:absolute;
+    text-align: center;
+    bottom:15px;
+    left:0;
+    width: 100%;
+
 }
 
 /* projects section */
@@ -452,11 +461,21 @@ button:hover{
 
 
 /* stats section */
-
 .calendar {
     background-color: white;
 }
 
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+
+.reveal.active{
+    transform: translateY(150px);
+    opacity: 1;
+}
 
 
 @media screen and (min-width:300px) and (max-width:500px){
@@ -597,6 +616,13 @@ button:hover{
     #highlight {
         font-size: 20px;
     }
+}
+
+/* reveal */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
 }
 
 @media screen and (min-width:501px) and (max-width:600px){
@@ -918,11 +944,20 @@ button:hover{
     }
 
 }
-@media screen and (min-width:900px) and (max-width:1000px){
+@media screen and (min-width:900px) and (max-width:999px){
     .skills_box {
         display: grid;
         width: 80%;
         grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+        margin: auto;
+    }
+}
+@media screen and (min-width:999px) and (max-width:1300px){
+    .skills_box {
+        display: grid;
+        width: 80%;
+        grid-template-columns: repeat(3, 1fr);
         gap: 80px;
         margin: auto;
     }
@@ -940,7 +975,7 @@ button:hover{
     .skills-card {
         background-color: white;
         text-align: center;
-        height: 100px;
+        height: 200px;
         padding: 10% 1%;
         border-radius: 2px;
     }
