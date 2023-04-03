@@ -473,7 +473,18 @@ button:hover{
 }
 
 .reveal.active{
-    transform: translateY(150px);
+    transform: translateY(0px);
+    opacity: 1;
+}
+.reveal2{
+    position: relative;
+    transform: translateX(0px);
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+
+.reveal2.active{
+    transform: translateY(0px);
     opacity: 1;
 }
 
