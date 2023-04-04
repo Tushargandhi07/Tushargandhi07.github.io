@@ -678,6 +678,12 @@ button:hover {
     opacity: 0;
 }
 
+@media screen and (max-width:599px){
+    #box{
+        font-size: 15px;
+    }
+}
+
 @media screen and (min-width:501px) and (max-width:600px) {
     .menu {
         height: 60vh;
@@ -868,7 +874,7 @@ button:hover {
 
     #contact_box {
         background-color: white;
-        width: 60%;
+        width: 90%;
         margin: auto;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
@@ -988,7 +994,7 @@ button:hover {
     #contact_box {
         background-color: white;
         font-size: smaller;
-        width: 60%;
+        width: 90%;
         margin: auto;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
