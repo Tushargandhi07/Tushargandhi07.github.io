@@ -18,7 +18,7 @@ function closem() {
 }
 
 function resume() {
-    window.open("https://drive.google.com/file/d/1iTu0C9XvWkvLS8lV04s1vNlNsVltXinx/view");
+    window.open("https://drive.google.com/file/d/11dMnwkPYdB6VXPpCgP2P-FLcpXtZtrPe/view?usp=share_link");
 }
 
 
