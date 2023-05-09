@@ -662,7 +662,6 @@ button:hover {
         background-color: white;
         font-size: smaller;
         width: 70%;
-        border:1px solid red;
         margin: auto;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
