@@ -525,7 +525,7 @@ button:hover {
 }
 
 
-@media screen and (min-width:300px) and (max-width:500px) {
+@media screen and (min-width:250px) and (max-width:500px) {
     section {
         padding: 50px
     }
@@ -648,6 +648,10 @@ button:hover {
         text-align: center;
     }
 
+    #calender{
+        width:100%;
+    }
+
     #contact {
         width: 100%;
         margin: 0px;
@@ -658,10 +662,19 @@ button:hover {
         background-color: white;
         font-size: smaller;
         width: 70%;
+        border:1px solid red;
         margin: auto;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
-
+    .heading_contact {
+        font-size: 12px;
+    }
+    .personal_info{
+        font-size: 12px;
+    }
+    .space{
+        margin-left:20px;
+    }
     .title {
         font-size: 40px;
     }
